@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container-signup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container-signup">
+    <div id="box">
+        <form method="post">
+            <div class="title">Signup</div>
+
+            <!-- Input fields for username, password, fullname, bu_email, address, gender, cp_number, and campus -->
+            <input class="input-field" type="text" name="username" placeholder="Username"><br><br>
+            <input class="input-field" type="password" name="password" placeholder="Password"><br><br>
+            <input class="input-field" type="text" name="fullname" placeholder="Full Name"><br><br>
+            <input class="input-field" type="email" name="bu_email" placeholder="BU Email"><br><br>
+            <input class="input-field" type="text" name="address" placeholder="Address"><br><br>
+            <input class="input-field" type="text" name="gender" placeholder="Gender"><br><br>
+            <input class="input-field" type="text" name="cp_number" placeholder="Phone Number"><br><br>
+            <input class="input-field" type="text" name="campus" placeholder="Campus"><br><br>
+
+            <input class="submit-button" type="submit" value="Signup"><br><br>
+
+            <a href="login.php">Login</a><br><br>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
